@@ -1,0 +1,19 @@
+
+<!Doctype html>
+<html>
+  <head>
+  <title>Django</title>
+  </head>
+  <body>
+  	{% for patient in patient_list %}
+   <div>
+  <h2>{{ patient.address}}</h2>
+    <p>{{ patient.bloodPressure }}</p>
+    <p>{{ patient.temperature}} </p>
+    <p>{{ patient.weight }}</p>
+    <p>{{ patient.height}} </p>
+</div>
+{% endfor %}
+  </body>
+
+</html>
